@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+echo "📝 Running pre-commit checks..."
+
+npx --no -- commitlint --edit $1
