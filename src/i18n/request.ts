@@ -5,7 +5,9 @@ export default getRequestConfig(async () => {
   const locale = await getUserLocale();
 
   // Fetch locals from either public folder or some other URL
-  const res = await fetch(`${process.env.LOCALES_URL || ""}/locales/${locale}.json`);
+  const res = await fetch(
+    `${process.env.LOCALES_URL || "http://localhost:3000/locales"}/${locale}.json`,
+  );
   if (!res.ok) {
     throw new Error(`Could not load messages for locale: ${locale}`);
   }

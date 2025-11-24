@@ -19,6 +19,7 @@
       }
     ],
     "paths": {
+      "@pandas/*": ["./styled-system/*"],
       "@/*": ["./src/*"]
     }
   },
