@@ -12,7 +12,6 @@ Ready to use NextJS template for faster development.
 - React hook form: flexible and extensible forms with validation.
 - Tanstack Query: data fetching with cache and server state utilities.
 - Zod: runtime type checking.
-- Immer: utility for mutations of data.
 - Next Intl: internationalization
 
 ### Styling
